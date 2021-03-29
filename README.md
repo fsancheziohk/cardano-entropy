@@ -96,7 +96,7 @@ Options:
 * `--workspace`: Where temporary files will go. This can be set to your temporary directory.
 * `--date-date`: The date that marks the end of the 24-hour window that we want to filter the data for.
 
-## Download Japan Meteorological Society Earthquake data and take its hash
+## Download earthquake data from the Japan Meteorological Society
 
 ```bash
 $ cardano-entropy jma-quake --workspace="$WORKSPACE" --end-date-time "$END_DATE_TIME' --hours "$HOURS"
