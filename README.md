@@ -67,6 +67,8 @@ $ docker run -d -p 4444:4444 -v /dev/shm:/dev/shm -v "$WORKSPACE:$WORKSPACE" sel
 
 ## Download NYSE data and take its hash
 
+Run these commands to download data from the NYSE website and take the data's hash.
+
 ```bash
 $ cardano-entropy nyse --workspace="$WORKSPACE" --username="$USERNAME" --password="$PASSWORD" --date="$DATE"
 Downloaded: /Users/jky/tmp/download-0ac80eea1ebf36da/NYSE_20210319.csv
@@ -82,7 +84,9 @@ Options:
 * `--days`: The number of days worth of data that should be downloaded.
 * `--headless`: Whether or not to run Chrome in headless mode. `True` or `False`, default is set to `True`.
 
-## Run to download GIS data and take its hash
+## Download GIS data and take its hash
+
+Run these commands to download GIS data and take its hash.
 
 ```bash
 $ cardano-entropy gis --workspace="$WORKSPACE" --end-date="$DATE"
@@ -97,6 +101,8 @@ Options:
 * `--date-date`: The date that marks the end of the 24-hour window that we want to filter the data for.
 
 ## Download earthquake data from the Japan Meteorological Society
+
+Run these commands to download earthquake data from the Japan Meteorological Society website.
 
 ```bash
 $ cardano-entropy jma-quake --workspace="$WORKSPACE" --end-date-time "$END_DATE_TIME' --hours "$HOURS"
